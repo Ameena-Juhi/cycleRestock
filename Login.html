@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Log In</h1>
+	<form action="#" th:action="@{/login}" method="post" align="center" th:object="${user}">
+		<label>Username</label>
+		<input type="text" th:field="*{name}" name="name" id="name"/>
+		<br>
+		<label>Password</label>
+		<input type="text" th:field="*{password}" name="pwd" id="pwd">
+		<br>
+		<input type="submit" name="submit" value="submit"/>
+	</form>
+</body>
+</html>
